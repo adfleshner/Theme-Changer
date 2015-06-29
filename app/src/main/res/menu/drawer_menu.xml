@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/themes">
+
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/navi_base_theme"
+                android:icon="@color/indigo_500"
+                android:title="@string/base" />
+            <item
+                android:id="@+id/navi_red_theme"
+                android:icon="@color/red_500"
+                android:title="@string/red" />
+            <item
+                android:id="@+id/navi_blue_theme"
+                android:icon="@color/blue_500"
+                android:title="@string/blue" />
+        </group>
+
+    </item>
+</menu>

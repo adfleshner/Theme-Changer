@@ -27,7 +27,7 @@ public class BaseActivity extends AppCompatActivity {
     private void updateTheme() {
         if (ThemeUtils.getTheme(getApplicationContext()) == ThemeUtils.THEME_BASE) {
             Log.d("Theme Updated","Base");
-            setTheme(R.style.AppTheme);
+            setTheme(R.style.AppTheme_Base);
         } else if (ThemeUtils.getTheme(getApplicationContext()) == ThemeUtils.THEME_RED) {
             Log.d("Theme Updated","Red");
             setTheme(R.style.AppTheme_Red);
@@ -59,13 +59,16 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     //Recreate the activity to Set the new theme
-    public void recreateActivity(final Class clazz) {
+    public void recreateActivity(final Class clazz,final Bundle b) {
         //Add a 250 ms delay so that it has a nicer transition.
         SleepyTime(new Runnable() {
             @Override
             public void run() {
                 Intent i = new Intent(BaseActivity.this,clazz);
                 i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                if(b!=null){
+                    i.putExtra(getString(R.string.recreate_key),b);
+                }
                 finish();
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 startActivity(i);

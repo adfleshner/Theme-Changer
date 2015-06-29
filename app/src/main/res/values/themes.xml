@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+
+
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme.Base" parent="AppTheme">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/indigo_500</item>
         <item name="colorPrimaryDark">@color/indigo_700</item>
@@ -11,7 +18,7 @@
         <item name="colorDark">@color/indigo_700</item>
     </style>
     <!-- Base application theme. -->
-    <style name="AppTheme.Red" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme.Red" parent="AppTheme">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/red_500</item>
         <item name="colorPrimaryDark">@color/red_700</item>
@@ -20,7 +27,7 @@
         <item name="colorDark">@color/red_700</item>
     </style>
     <!-- Base application theme. -->
-    <style name="AppTheme.Blue" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme.Blue" parent="AppTheme">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/blue_500</item>
         <item name="colorPrimaryDark">@color/blue_700</item>
