@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ThemeChanger</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="base">Base</string>
+    <string name="prefs_themes_key">theme</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/aaronfleshner/Desktop/Work/ThemeChanger/app/build/intermediates/exploded-aar/com.android.support/palette-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="060b30a619b8d3ba053e1d7dc08b3fdf0dd81530">
+        <dex dex="/Users/aaronfleshner/Desktop/Work/ThemeChanger/app/build/intermediates/pre-dexed/debug/classes-f0523424d921e3d987030ba3add553f17b78bbe5.jar" />
+    </item>
+    <item
+        jar="/Users/aaronfleshner/Desktop/Work/ThemeChanger/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="/Users/aaronfleshner/Desktop/Work/ThemeChanger/app/build/intermediates/pre-dexed/debug/classes-c7dc32a050f9dad799ce2eb80b661d7f5d07862c.jar" />
+    </item>
+    <item
+        jar="/Users/aaronfleshner/Desktop/Work/ThemeChanger/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/aaronfleshner/Desktop/Work/ThemeChanger/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-b8dff1910a0e660956cdb65c06f5c18c6db880c4.jar" />
+    </item>
+    <item
+        jar="/Users/aaronfleshner/Desktop/Work/ThemeChanger/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/aaronfleshner/Desktop/Work/ThemeChanger/app/build/intermediates/pre-dexed/debug/classes-9ddad6970800f297d8eb2ce7e05cee88bbc0a40e.jar" />
+    </item>
+    <item
+        jar="/Users/aaronfleshner/android-sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/aaronfleshner/Desktop/Work/ThemeChanger/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-60168b855a632854e43d85e8a4f321a49778f464.jar" />
+    </item>
+    <item
+        jar="/Users/aaronfleshner/Desktop/Work/ThemeChanger/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/aaronfleshner/Desktop/Work/ThemeChanger/app/build/intermediates/pre-dexed/debug/classes-d4f90a4f33cf0d98fce28e6a13a71cb4291051a7.jar" />
+    </item>
+
+</items>
