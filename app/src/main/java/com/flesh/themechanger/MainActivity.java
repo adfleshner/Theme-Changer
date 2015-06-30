@@ -1,6 +1,5 @@
 package com.flesh.themechanger;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
@@ -24,7 +23,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends ThemedActivity {
 
     //Buttons
 
@@ -149,17 +148,17 @@ public class MainActivity extends BaseActivity {
         switch (menuItem.getItemId()) {
             case R.id.navi_red_theme:
                 //Set to red theme
-                ThemeUtils.setTheme(getApplicationContext(), ThemeUtils.THEME_RED);
+                ThemeUtils.setTheme(getApplicationContext(), R.style.AppTheme_Red);
                 recreateActivity(MainActivity.class,b);
                 break;
             case R.id.navi_blue_theme:
                 //Set to blue theme
-                ThemeUtils.setTheme(getApplicationContext(), ThemeUtils.THEME_BLUE);
+                ThemeUtils.setTheme(getApplicationContext(), R.style.AppTheme_Blue);
                 recreateActivity(MainActivity.class,b);
                 break;
             case R.id.navi_base_theme:
                 //ser to base theme
-                ThemeUtils.setTheme(getApplicationContext(), ThemeUtils.THEME_BASE);
+                ThemeUtils.setTheme(getApplicationContext(), R.style.AppTheme_Base);
                 recreateActivity(MainActivity.class,b);
                 break;
         }

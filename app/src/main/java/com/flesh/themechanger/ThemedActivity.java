@@ -6,7 +6,6 @@ import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.util.TypedValue;
@@ -15,7 +14,7 @@ import android.view.WindowManager;
 /**
  * Created by aaronfleshner on 6/28/15.
  */
-public class BaseActivity extends AppCompatActivity {
+public class ThemedActivity extends AppCompatActivity {
 
 
     @Override
@@ -25,13 +24,13 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     private void updateTheme() {
-        if (ThemeUtils.getTheme(getApplicationContext()) == ThemeUtils.THEME_BASE) {
+        if (ThemeUtils.getTheme(getApplicationContext()) == R.style.AppTheme_Base) {
             Log.d("Theme Updated","Base");
             setTheme(R.style.AppTheme_Base);
-        } else if (ThemeUtils.getTheme(getApplicationContext()) == ThemeUtils.THEME_RED) {
+        } else if (ThemeUtils.getTheme(getApplicationContext()) == R.style.AppTheme_Red) {
             Log.d("Theme Updated","Red");
             setTheme(R.style.AppTheme_Red);
-        } else if (ThemeUtils.getTheme(getApplicationContext()) == ThemeUtils.THEME_BLUE) {
+        } else if (ThemeUtils.getTheme(getApplicationContext()) == R.style.AppTheme_Blue) {
             Log.d("Theme Updated","Blue");
             setTheme(R.style.AppTheme_Blue);
         }
@@ -64,7 +63,7 @@ public class BaseActivity extends AppCompatActivity {
         SleepyTime(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(BaseActivity.this,clazz);
+                Intent i = new Intent(ThemedActivity.this,clazz);
                 i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 if(b!=null){
                     i.putExtra(getString(R.string.recreate_key),b);

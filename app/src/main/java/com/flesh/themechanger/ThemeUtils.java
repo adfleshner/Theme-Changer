@@ -9,9 +9,6 @@ import android.preference.PreferenceManager;
  */
 public class ThemeUtils {
 
-    public static final int THEME_BASE = 0;
-    public static final int THEME_RED = 1;
-    public static final int THEME_BLUE = 2;
 
     public static void setTheme(Context cxt, int theme){
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(cxt);
@@ -19,7 +16,7 @@ public class ThemeUtils {
     }
     public static int getTheme(Context cxt){
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(cxt);
-        return prefs.getInt(cxt.getString(R.string.prefs_themes_key),0);
+        return prefs.getInt(cxt.getString(R.string.prefs_themes_key),R.style.AppTheme_Base);
     }
 
 
